@@ -27,3 +27,34 @@
         index++
         } while(fahr != 212.0)
         }
+
+    2. Classes
+        Syntax;
+            class Book {
+                val pages = 320
+                val title = "Harry Potter and the Sorcerer's Stone"
+                val author = "J.K. Rowling"
+            }
+
+        Syntax with primary constructor, init block & member function
+            class Dog(val name: String, val breed: String, val competitionsParticipated: List<String>) {
+  
+                // init block
+                init {
+                    for (comp in competitionsParticipated) {
+                    println("$name participated in $comp.")
+                    }
+                }
+
+                // Member function below 
+                fun speak() {
+                println("$name says: Woof!")
+                }
+
+            }
+
+            fun main() {
+                // Write your instance below 🐩
+                val maxie = Dog("Maxie", "Poodle", listOf("Westminster Kennel Club Dog Show", "AKC National Championship"))
+                maxie.speak()
+            }
